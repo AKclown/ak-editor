@@ -1,0 +1,11 @@
+{
+  // https://github.com/tsconfig/bases?tab=readme-ov-file
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist"
+  },
+  "display": "Monorepo",
+  "exclude": ["node_modules"]
+}
