@@ -1,11 +1,22 @@
+// https://github.com/andrewthauer/ts-monorepo
+// https://medium.com/the-daily-coder/how-to-correctly-set-up-typescript-project-references-in-a-monorepo-50f33cf0d984
 {
   // https://github.com/tsconfig/bases?tab=readme-ov-file
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
-    "outDir": "dist"
+    "outDir": "dist",
+    "noEmit": true,
   },
+  "files": [],
+  "references":[
+    {"path": "./packages/cli"},
+    {"path": "./packages/client"},
+    {"path": "./packages/engine"},
+    {"path": "./packages/extension"},
+    {"path": "./packages/server"},
+  ],
   "display": "Monorepo",
   "exclude": ["node_modules"]
 }
