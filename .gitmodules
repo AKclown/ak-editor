@@ -10,3 +10,6 @@
 [submodule "packages/extension"]
 	path = packages/extension
 	url = git@github.com:AKclown/extension.git
+[submodule "packages/cli"]
+	path = packages/cli
+	url = git@github.com:AKclown/cli.git
